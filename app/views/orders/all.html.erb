@@ -1,0 +1,35 @@
+
+#  link_to "Label", :controller => :my_controller, :action => :index
+
+
+<h1>Listing orders</h1>
+
+<table>
+  <tr>
+    <th>Customer Id</th>
+    <th>Order Item</th>
+    <th>Quantity</th>
+    <th>Order Date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @orders.each do |order| %>
+  <tr>
+    <td><%= order.customer_id %></td>
+    <td><%= order.orderitem %></td>
+    <td><%= order.quantity %></td>
+    <td><%= order.orderdate %></td>
+    <td><%= link_to 'Show', order_path(order), :action => 'showone' %></td>
+    <td><%= link_to 'Edit', edit_order_path(order) %></td>
+    <td><%= link_to 'Destroy', order_path(order), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+	<%= link_to 'New Order', new_order_path %>
+
+<br />
+
+

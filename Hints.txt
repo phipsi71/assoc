@@ -1,0 +1,11 @@
+tryruby.trrrrrails g migration add_user_id_to_tester user_id:integer
+
+add in model: has_many :orders and belongs_to :customer
+
+poem.lines.to_a.reverse.join
+
+http://ruby-doc.org/core-2.0/String.html
+books["Gravity's Rainbow"] = :splendid
+
+books.valu­es.each { |rate­| ratin­gs[rate] += 1 }
+
