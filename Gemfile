@@ -45,4 +45,6 @@ gem 'bootstrap-sass', '2.1'
 gem "rabbitmq-service-util", "~> 0.3"
 gem 'will_paginate'
 gem "will_paginate-bootstrap", "~> 0.2.2"
+gem "bootstrap-datepicker-rails"
+
 

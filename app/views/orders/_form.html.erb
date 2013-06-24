@@ -14,7 +14,7 @@
   <div class="control-group">
     <%= f.label :orderdate, :class => 'control-label' %>
     <div class="controls">
-      <%= f.datetime_select :orderdate, :class => 'datetime_select' %>
+	<%= f.date_select :orderdate, {:prompt => { :day => 'Select day', :month => 'Select month', :year => 'Select year' }}, {:class => 'date-select'}  %>
     </div>
   </div>
   <div class="control-group">
