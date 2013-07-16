@@ -1,5 +1,7 @@
 Assoc::Application.routes.draw do
 
+  root to: 'customers#index'
+
 
   get 'orders/:id' => 'orders#showone'
   get 'allorders' => 'orders#all'
